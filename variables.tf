@@ -1,9 +1,11 @@
-variable "aws_region" {
-  description = "AWS region to deploy resources"
-  default     = "us-east-1"
+variable "region" {
+  default = "us-east-1"
 }
 
-variable "project_name" {
-  description = "Project name prefix"
-  default     = "vr-it-aws"
+variable "cluster_name" {
+  default = "k8s.example.com"
+}
+
+variable "bucket_name" {
+  description = "Globally unique S3 bucket name for Kops state"
 }
