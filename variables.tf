@@ -8,4 +8,5 @@ variable "cluster_name" {
 
 variable "bucket_name" {
   description = "Globally unique S3 bucket name for Kops state"
+  default = "vrit"
 }
